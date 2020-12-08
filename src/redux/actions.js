@@ -1,6 +1,6 @@
 import {
     APPLY_STYLE, CHANGE_STYLES,
-    CHANGE_TEXT, CHANGE_TITLE, TABLE_RESIZE
+    CHANGE_TEXT, CHANGE_TITLE, TABLE_RESIZE, UPDATE_DATE
 } from "@/redux/types";
 
 export function tableResize(data) {
@@ -15,6 +15,12 @@ export function changeText(data) {
     return {
         type: CHANGE_TEXT,
         data
+    }
+}
+
+export function updateDate() {
+    return {
+        type: UPDATE_DATE
     }
 }
 
